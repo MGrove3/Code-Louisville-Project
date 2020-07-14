@@ -8,6 +8,8 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    flex-direction: row ;
+    flex-wrap: wrap;
 }
 
 header {
@@ -61,5 +63,13 @@ footer {
 
 h1 {
 color: white;
-
+text-align: center;
+font-family: 'Montserrat', sans-serif;
 }
+
+p {
+color: white;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
