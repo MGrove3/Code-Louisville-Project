@@ -6,47 +6,51 @@
     <meta charset="UTF-8">
     <title>Grove Photography</title>
 <body>
+    <nav id="hamnav">
+        <!-- [THE HAMBURGER] -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+   
+        <!-- [MENU ITEMS] -->
+        <div id="hamitems">
+          <a href="index.html"><img src="..//logo2.png" width="60px" height="30px" alt="logo" class="footerlogo"></a>
+          <a href="philadelphia.html">Philadelphia</a>
+          <a href="louisville.html">Louisville</a>
+          <a href="northernmichigan.html">Northern Michigan</a>
+          <a href="https://z-p3.www.instagram.com/_mrgp_/">Instagram</a>
+        </div>
+      </nav>
 
-<header>
-    <div class="container">
-
-        <a href="index.html"><img src="..//logo2.png" width="200px" height="100px" alt="logo" class="logo"></a>
-
-        <nav>
-            <ul>
-                <li><a href="philadelphia.html">Philadelphia</a></li>
-                <li><a href="louisville.html">Louisville</a></li>
-                <li><a href="northernmichigan.html">Northern Michigan</a></li>
-            </ul>
-        </nav>
-
-
-    
-    </div>
-</header>
 <h1>PHILADELPHIA</h1>
-<p>Here are some pictures from my time in Philadelphia.</p>
-<div class="icontainer">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image"> 
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">     
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image"> 
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">
-    <img class="item" src="https://source.unsplash.com/random/320x240" alt="Example image">  
-</div>
-<input type="button" class="btn btn-lg btn-success" onclick="goToHome()" value="Home" />
+<p>Here are some pictures from my time in Philadelphia. Enjoy!</p>
+<div class="gallery" align="center">
 
+    <div class="preview" align="center">
+        <img name="preview" src="..//Photography website/pics/MRG_3726.jpg" height="75%" width="35%">
+    </div>
 </div>
+
+<div class="thumbnails" align="center">
+	<img onmouseover="preview.src=img1.src" name="img1" src="..//Photography website/pics/MRG_3726.jpg" alt="" width="5%" height="10%" />
+	<img onmouseover="preview.src=img2.src" name="img2" src="..//Photography website/pics/L.jpg" alt="" width="5%" height="5%" />
+	<img onmouseover="preview.src=img3.src" name="img3" src="..//Photography website/pics/A.jpg" alt="" width="5%" height="10%" />
+	<img onmouseover="preview.src=img4.src" name="img4" src="..//Photography website/pics/B.jpg" alt="" width="5%" height="10%"/>
+    <img onmouseover="preview.src=img5.src" name="img5" src="..//Photography website/pics/C.jpg" alt="" width="5%" height="10%"/>
+    <img onmouseover="preview.src=img6.src" name="img6" src="..//Photography website/pics/D.jpg" alt="" width="5%" height="10%" />
+	<img onmouseover="preview.src=img7.src" name="img7" src="..//Photography website/pics/E.jpg" alt="" width="5%" height="10%"/>
+    <img onmouseover="preview.src=img8.src" name="img8" src="..//Photography website/pics/F.jpg" alt="" width="5%" height="10%"/>
+    <img onmouseover="preview.src=img9.src" name="img9" src="..//Photography website/pics/J.jpg" alt="" width="5%" height="10%"/>
+    <img onmouseover="preview.src=img10.src" name="img10" src="..//Photography website/pics/H.jpg" alt="" width="5%" height="10%"/>
+    <img onmouseover="preview.src=img11.src" name="img11" src="..//Photography website/pics/I.jpg" alt="" width="5%" height="10%"/>
+    <img onmouseover="preview.src=img12.src" name="img12" src="..//Photography website/pics/M.jpg" alt="" width="5%" height="10%"/>
+</div>
+<input type="button" class="button" onclick="goToHome()" value="Home" />
+
 
 <footer>
     <a href="index.html"><img src="..//logo2.png" width="200px" height="100px" alt="logo" class="footerlogo"></a>
 </footer>
-<script src=".//javascript.js"></script>
+
+<script src="javascript.js"></script>
 </body>
 </html>
