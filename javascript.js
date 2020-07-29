@@ -13,3 +13,10 @@ alert(12 + 56);
 alert(33 / 2.5);
 /* Equal to 13.2 */
 
+var w = 10
+var x = 43
+var y = 4
+
+var z = x * y - w
+alert(z)
+/* Equals to 162 */
