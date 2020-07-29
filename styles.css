@@ -1,3 +1,4 @@
+/* Background CSS */
 body {
     margin: 0;
     background: #222;
@@ -5,40 +6,58 @@ body {
     font-weight: 500;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    flex-direction: row ;
-    flex-wrap: wrap;
-}
+/* Large Screen */
+/* Wrapper */
+#hamnav {
+    width: 100%;
+    background: #000;
+    /* Optional */
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Hide Hamburger */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* Horizontal Menu Items */
+  /*flex spot One */
+  #hamitems { display: flex; }
+  #hamitems a {
+    width: 20%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: slategray
+  }
+  
+  /* Small Screen CSS */
+  @media screen and (max-width: 768px){
+    /* Show Hamburger Icon */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: slategray;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
 
-header {
-    background: slategray;
-}
-
-header::after {
-    content:'';
-    display: table;
-    clear: both;
-}
-.logo {
-    float: left;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 35px;
-    padding-top: 25px;
-}
 
 nav a {
     color: white;
@@ -48,19 +67,19 @@ nav a {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav a:hover {
-    color: turquoise;    
+/* Footer CSS */
+footer {
+background-color: slategray;
 }
 
-footer {
-    background: slategray;
-}
+/* Centers My Logo */
 .footerlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Copy CSS */
 h1 {
 color: white;
 text-align: center;
@@ -73,3 +92,34 @@ text-align: center;
 font-family: 'Montserrat', sans-serif;
 }
 
+
+.button {
+margin-left: auto;
+margin-right: auto;
+}
+
+
+/* Thumbnail CSS for each location page */
+.thumbnails img {
+    height: 80px;
+    border: 4px solid slategray;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+    border: 4px solid #00ccff;
+    cursor:pointer;
+}
+
+.preview img {
+    border: 4px solid slategray;
+    padding: 1px;
+    width: 800px;
+}
+/* CSS for Home page content*/
+/* flexbox spot two */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
