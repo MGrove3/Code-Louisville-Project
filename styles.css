@@ -69,7 +69,9 @@ nav a {
 
 /* Footer CSS */
 footer {
+width: 100%;
 background-color: slategray;
+bottom: 0;
 }
 
 /* Centers My Logo */
@@ -123,21 +125,28 @@ display: inline-block;
 }
 /* CSS for Home page content*/
 /* flexbox spot two */
-#container {
-  display: flex;
-  flex-wrap: wrap;
+
+#slider {
+  width: 921px;
+  height: 552px;
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid white;
+  box-shadow: 0px 0px 5px 2px black;
+  overflow: hidden;
 }
 
-/* More media queries to make page more responsive */
-@media screen and ( max-width: 1024px ) {
-  img.responsive { width: 200px;
-  }
-  @media screen and ( min-width: 1025px) {
-  img.responsive { width: 33%;}
-  }
-  img.responsive { height: auto; }
+button {
+  padding: 20px;
+  border: none;
+  background:white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+}
 
-  @media screen and ( max-width: 600px) {
-    img.responsive { width: 33%;}
-    }
-    img.responsive { height: auto; }
+.next {
+  margin-left: 866px;
+}
