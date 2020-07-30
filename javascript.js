@@ -13,6 +13,7 @@ alert(12 + 56);
 alert(33 / 2.5);
 /* Equal to 13.2 */
 
+/* A math equation instead of just an alert */
 var w = 10
 var x = 43
 var y = 4

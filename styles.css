@@ -58,7 +58,7 @@ body {
     #hamnav input:checked ~ #hamitems { display: block; }
   }
 
-
+/* Font Focused Nav CSS */
 nav a {
     color: white;
     text-decoration: none;
@@ -92,10 +92,14 @@ text-align: center;
 font-family: 'Montserrat', sans-serif;
 }
 
-
+/* Return function button CSS */
 .button {
-margin-left: auto;
-margin-right: auto;
+background-color:white;
+border: slategray;
+font-size: 19px;
+font-family: 'Montserrat', sans-serif;
+text-decoration: none;
+display: inline-block;
 }
 
 
@@ -106,16 +110,16 @@ margin-right: auto;
     padding: 1px;
     margin: 0 10px 10px 0;
 }
-
+/* CSS for when hovering over thumbnails */
 .thumbnails img:hover {
     border: 4px solid #00ccff;
     cursor:pointer;
 }
-
+/* CSS for preview image */
 .preview img {
     border: 4px solid slategray;
     padding: 1px;
-    width: 800px;
+    width: 30%;
 }
 /* CSS for Home page content*/
 /* flexbox spot two */
@@ -123,3 +127,17 @@ margin-right: auto;
   display: flex;
   flex-wrap: wrap;
 }
+
+/* More media queries to make page more responsive */
+@media screen and ( max-width: 1024px ) {
+  img.responsive { width: 200px;
+  }
+  @media screen and ( min-width: 1025px) {
+  img.responsive { width: 33%;}
+  }
+  img.responsive { height: auto; }
+
+  @media screen and ( max-width: 600px) {
+    img.responsive { width: 33%;}
+    }
+    img.responsive { height: auto; }
