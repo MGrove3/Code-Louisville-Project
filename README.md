@@ -42,7 +42,7 @@ that print to the console log as some extra java work.
 
 
 
-directions for downloading the site:
+directions for downloading the site
 
 
 
