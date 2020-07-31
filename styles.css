@@ -70,6 +70,7 @@ nav a {
 /* Footer CSS */
 footer {
 background-color: slategray;
+width: 100%;
 }
 
 /* Centers My Logo */
@@ -122,29 +123,54 @@ display: inline-block;
     width: 30%;
 }
 /* CSS for Home page content*/
-/* flexbox spot two */
+/* flexbox spot two also grid is used */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+.responsive-image {
+  max-width: 100%;
+}
+.cell img {
+  display: block;
+}
+/* Media queries to transform from one column to two to three */
+/* These cell widths are calculated and then the answer is used as a cell block width */
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-#slider {
-  width: 921px;
-  height: 552px;
-  margin: 20px auto;
-  position: relative;
-  border: 10px solid white;
-  box-shadow: 0px 0px 5px 2px black;
-  overflow: hidden;
+  .cell {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+.cell {
+  margin: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
 }
 
-button {
-  padding: 20px;
-  border: none;
-  background:white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  position: absolute;
-  top: 45%;
-  cursor: pointer;
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
 }
 
-.next {
-  margin-left: 866px;
+/* Bonus media query for text to resize on mobile */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 16px;
+  }  
 }
