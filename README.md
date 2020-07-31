@@ -13,12 +13,12 @@ Tips for downloading site
 
 
 So here is what I incorporated into the website
----Use Media Queries to adjust from single column design to multi column design
----Use flexbox on multiple parts of your site to make them responsive
----Use Javascript and create a return function and use it on your site
----Create responsive header that turns into hamburger menu
----I also created a photo gallery that changes images when you hover over a thumbnail
----i also added in some extra javascript functions so i can show off some of my javascript skills
+---(Use Media Queries to adjust from single column design to multi column design)---
+---(Use flexbox on multiple parts of your site to make them responsive)---
+---(Use Javascript and create a return function and use it on your site)---
+---(Create responsive header that turns into hamburger menu)---
+---(I also created a photo gallery that changes images when you hover over a thumbnail)---
+---(i also added in some extra javascript functions so i can show off some of my javascript skills)---
 
 I really would love to have the opportunity to continue learning about code. While I have no intentions to becoming a coder i find this subject very interesting and i would love to continue to learn with Code Louisville.
 
